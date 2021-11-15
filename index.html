@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App | Custom</title>
+
+  <link rel="icon" href="faviconIcon.png" type="image/png" />
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-icons">expand_more</i>
+      <span>Now Playing</span>
+      <i class="material-icons">more_horiz</i>
+    </div>
+
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+
+    <div class="song-detail">
+      <h4 class="name">Drown</h4>
+      <p class="artist">Martin Garrix</p>
+    </div>
+
+    <div class="progress-area">
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <span class="current">0:20</span>
+        <span class="duration">3:40</span>
+      </div>
+      <audio id="main-audio" src=""></audio>
+    </div>
+    
+
+    <div class="controls">
+      <i id="repeatList" class="material-icons" title="Playlist Looped">repeat</i>
+      <i id="prev" class="material-icons" title="Previous Song">skip_previous</i>
+      <div class="play-pause">
+        <!-- <i class="material-icons">pause</i> -->
+        <i id="play" class="material-icons">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons" title="Next Song">skip_next</i>
+      <i id="more-music" class="material-icons" title="List Songs">queue_music</i>
+    </div>
+
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class="material-icons">queue_music</i>
+          <span>Music List</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <!-- ListSong -->
+      <ul></ul>
+    </div>
+  </div>
+
+
+  <script src="js/musics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
